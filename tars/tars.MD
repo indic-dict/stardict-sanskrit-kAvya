@@ -2,6 +2,7 @@ https://github.com/sanskrit-coders/stardict-sanskrit/raw/master/sa-kAvya/tars/Ch
 https://github.com/sanskrit-coders/stardict-sanskrit/raw/master/sa-kAvya/tars/bloomfield-vedic-sa__2016-02-20_16-15-35.tar.gz
 https://github.com/sanskrit-coders/stardict-sanskrit/raw/master/sa-kAvya/tars/dcs-frequency__2017-03-18_08-10-40.tar.gz
 https://github.com/sanskrit-coders/stardict-sanskrit/raw/master/sa-kAvya/tars/index-names-mahabharata__2017-06-22_07-06-30__2MB.tar.gz
+https://github.com/sanskrit-coders/stardict-sanskrit/raw/master/sa-kAvya/tars/kyv-ts-padasvara__2018-08-14_14-17-41__0MB.tar.gz
 https://github.com/sanskrit-coders/stardict-sanskrit/raw/master/sa-kAvya/tars/mahabharata_cultural_index__2016-04-30_17-13-37.tar.gz
 https://github.com/sanskrit-coders/stardict-sanskrit/raw/master/sa-kAvya/tars/purANa-encyclopedia__2017-04-27_12-11-44__4MB.tar.gz
 https://github.com/sanskrit-coders/stardict-sanskrit/raw/master/sa-kAvya/tars/purANa-index-dev__2016-02-20_16-15-38.tar.gz
