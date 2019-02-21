@@ -4,8 +4,8 @@ STARDICT_SANSKRIT_BIN=~/stardict-sanskrit/bin
 # make all DICTS=xyz
 DICTS=.*
 
-# Let the URL not end with /.र्म
-URL=https://github.com/sanskrit-coders/stardict-sanskrit/raw/master/$(shell pwd|sed -e s/.*[/]//)/tars
+# Let the URL not end with /.
+URL=https://github.com/indic-dict/stardict-sanskrit-kAvya/raw/master/$(shell pwd|sed -e s/.*[/]//)/tars
 
 
 .PHONY: all stardict tars
@@ -13,17 +13,15 @@ URL=https://github.com/sanskrit-coders/stardict-sanskrit/raw/master/$(shell pwd|
 all:final_babylon stardict tars
 
 final_babylon:
-	bash ../bin/babylon_add_optitrans.sh DICTS=$(DICTS)
+	bash $(STARDICT_SANSKRIT_BIN)/babylon_add_optitrans.sh DICTS=$(DICTS)
 
 stardict:
-	bash ../bin/tsv_to_stardict.sh DICTS=$(DICTS)
-	
+	bash $(STARDICT_SANSKRIT_BIN)/tsv_to_stardict.sh DICTS=$(DICTS)
+
 tars:
-	bash ../bin/make_tarballs.sh $(URL) DICTS=$(DICTS)
+	bash $(STARDICT_SANSKRIT_BIN)/make_tarballs.sh $(URL) DICTS=$(DICTS)
 
 mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
 current_dir := $(dir $(mkfile_path))
 tarlist:
-	bash ../bin/update_tars_md.sh $(current_dir)tars $(URL)
-
-
+	bash $(STARDICT_SANSKRIT_BIN)/update_tars_md.sh $(current_dir)tars $(URL)
