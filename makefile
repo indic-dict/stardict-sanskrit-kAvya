@@ -5,7 +5,7 @@ DICT_TOOLS_BIN_BASH=~/dict-tools/bin/bash
 DICTS=.*
 
 # Let the URL not end with /.
-URL=https://github.com/indic-dict/stardict-sanskrit-kAvya/raw/master/tars
+URL=https://github.com/indic-dict/stardict-sanskrit-kAvya/raw/gh-pages/tars
 
 
 .PHONY: all stardict tars
