@@ -1,6 +1,3 @@
-## Info
-Data for this file was obtained by the padasvara digitzed and published by parankusa.org.
-
 ## Post processing
 - padapATha was converted to a unique set of segments by the use of regular expression replacement, sort and uniq.
 - Some manual editing was done.
