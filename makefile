@@ -3,6 +3,7 @@ DICT_TOOLS_BIN_BASH=~/dict-tools/bin/bash
 
 # make all DICTS=xyz
 DICTS=.*
+OVERWRITE=false
 GITHUB_TOKEN=NONE
 
 # Let the URL not end with /.
@@ -23,7 +24,7 @@ tars:
 	bash $(DICT_TOOLS_BIN_BASH)/make_tarballs.sh $(URL) DICTS=$(DICTS)
 
 full:
-	bash $(DICT_TOOLS_BIN_BASH)/full_build.sh $(URL) DICTS=$(DICTS) GITHUB_TOKEN=$(GITHUB_TOKEN)
+	bash $(DICT_TOOLS_BIN_BASH)/full_build.sh $(URL) DICTS=$(DICTS) GITHUB_TOKEN=$(GITHUB_TOKEN) overwrite=$(OVERWRITE)
 
 
 mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
