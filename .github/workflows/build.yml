@@ -14,6 +14,9 @@ on:
 jobs:
   transform:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  
+      actions: write
     # stardict-tools was missing on ubuntu-latest as of 20210403
 
     steps:
@@ -45,6 +48,7 @@ jobs:
 #        github_token: ${{ secrets.GITHUB_TOKEN }}
 #        branch: gh-pages
     - name: Deploy
+      id: deploy
       uses: peaceiris/actions-gh-pages@v3
       if: ${{ github.event_name != 'pull_request'}}
       with:
